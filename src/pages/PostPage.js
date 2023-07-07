@@ -30,7 +30,7 @@ const PostPage = ({fetchInitialData, data}) => {
     return (
         <div>
             <PageTitle>User Post #{post.id}</PageTitle>
-            <div className="mb-3">
+            <div className="flex mb-3 mt-2">
                 <Button route={`/posts/${post.userId}`}>Go Back</Button>
             </div>
             <PostView {...post}/>

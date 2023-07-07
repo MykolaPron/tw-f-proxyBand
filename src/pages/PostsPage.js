@@ -30,7 +30,7 @@ const PostsPage = ({fetchInitialData, data}) => {
     return (
         <>
             <PageTitle>User Posts</PageTitle>
-            <div className="mb-3">
+            <div className="flex mb-3 mt-2">
                 <Button route={`/`}>Go Back</Button>
             </div>
             <PostList posts={posts}/>

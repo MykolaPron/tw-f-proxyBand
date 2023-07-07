@@ -55,7 +55,7 @@ const UsersPage = ({fetchInitialData, data}) => {
 
     return (
         <>
-            <PageTitle>User page</PageTitle>
+            <PageTitle>User List</PageTitle>
             <div className="flex justify-between mb-5">
                 <Search value={search} onChange={handleSearch}/>
                 <OrderSelect sort={sort} onChange={handleSort}/>

@@ -30,7 +30,7 @@ const AlbumsPage = ({fetchInitialData, data}) => {
     return (
         <div>
             <PageTitle>User Albums</PageTitle>
-            <div className="mb-3">
+            <div className="flex mb-3 mt-2">
                 <Button route={`/`}>Go Back</Button>
             </div>
             <AlbumList albums={albums}/>
