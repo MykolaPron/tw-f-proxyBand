@@ -1,9 +1,15 @@
 {
-  "main": "index.js",
+  "main": "src/server.js",
+  "homepage": "https://github.com/MykolaPron/tw-f-proxyBand.git",
+  "repository": {
+    "url": "git+https://github.com/MykolaPron/tw-f-proxyBand.git"
+  },
   "scripts": {
     "build": "webpack",
     "start": "node dist/server.js",
-    "dev": "webpack && node dist/server.js"
+    "dev": "webpack && node dist/server.js",
+    "predeploy": "rimraf dist && npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "babel": {
     "presets": [
@@ -33,9 +39,11 @@
     "autoprefixer": "^10.4.14",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.8.1",
+    "gh-pages": "^5.0.0",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss": "^8.4.25",
     "postcss-loader": "^7.3.3",
+    "rimraf": "^5.0.1",
     "style-loader": "^3.3.3",
     "tailwindcss": "^3.3.2",
     "webpack": "^5.88.1",
